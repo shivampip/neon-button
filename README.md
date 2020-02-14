@@ -10,6 +10,8 @@
 npm install --save neon-button
 ```
 
+![Neon Button Screenshow](https://github.com/shivampip/neon-button/blob/master/ss.png)
+
 ## Usage
 
 ```jsx
