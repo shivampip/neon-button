@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 
-import ExampleComponent from 'neon-button'
+import NeonButton from 'neon-button'
 
 export default class App extends Component {
   render () {
     return (
       <div>
-        <ExampleComponent text='Modern React component module' />
+        <NeonButton
+          text='Neon Button'
+          color= "#34ebb7"
+        />
       </div>
     )
   }
