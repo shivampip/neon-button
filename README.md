@@ -15,12 +15,15 @@ npm install --save neon-button
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'neon-button'
+import NeonButton from 'neon-button'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      <NeonButton
+          text='Neon Button'
+          color= "#34ebb7"
+      />
     )
   }
 }
