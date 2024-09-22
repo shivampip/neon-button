@@ -1,35 +1,39 @@
-# neon-button
+# Qureal Editor
 
-> Neon button for React app
+> Official Qureal React Components
 
-[![NPM](https://img.shields.io/npm/v/neon-button.svg)](https://www.npmjs.com/package/neon-button) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)
 
 ## Install
 
 ```bash
-npm install --save neon-button
+npm install qureal-editor
 ```
-
-![Neon Button Screenshow](https://raw.githubusercontent.com/shivampip/neon-button/master/ss.png)
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
+import React from "react";
+import { QurealViewer } from "qureal-editor";
 
-import NeonButton from 'neon-button'
-
-class Example extends Component {
-  render () {
+function App() {
     return (
-      <NeonButton
-          text='Neon Button'
-          color= "#34ebb7"
-      />
-    )
-  }
+        <QurealViewer
+            slug="test_21"
+            onFormSubmit={(form_data)=>{
+                console.log("Data filled in form", form_data);
+            }}
+            style={{
+                width: "800px",
+                height: "90vh",
+                border: "1px solid black"
+            }}
+        />
+    );
 }
 ```
+
+For efficieny in case of multiple creations rendering, do not destroy the component, just update slug prop.
 
 ## License
 
